@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="var.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Customize image</title>
+  </head>
+  <body>
+    <h1>
+      You can customize your image style by using the
+      <span class="hl">controls</span> below
+    </h1>
+
+    <div class="controls">
+      <label for="sizing">Spacing</label>
+      <input
+        class="sizing"
+        id="sizing"
+        type="range"
+        name="sizing"
+        min="10"
+        max="200"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="blur">Blur</label>
+      <input
+        id="blur"
+        type="range"
+        name="blur"
+        min="0"
+        max="25"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="baseColor">Base color</label>
+      <input id="baseColor" type="color" name="baseColor" />
+    </div>
+
+    <img width="400" height="250" src="./Var img.jpg" />
+
+    <script src="./app.js"></script>
+  </body>
+</html>
